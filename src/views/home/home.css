@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 18vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #1e3a8a 0%, #1e40af 100%);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.sidebar-header {
+    background-color: #1e3a8a;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.user-name {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.user-role {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+}
+
+.sidebar-menu {
+    flex: 1;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.menu-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sidebar-footer {
+    padding: 20px;
+}
+
+.logout-button {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.logout-button:hover {
+    background-color: white;
+    color: #1e3a8a;
+}
+
+/* Iconos SVG simplificados */
+.icon-lock::before {
+    content: '🔒';
+}
+
+.icon-shopping::before {
+    content: '📋';
+}
+
+.icon-cart::before {
+    content: '🛒';
+}
+
+.icon-truck::before {
+    content: '🚚';
+}
+
+.icon-users::before {
+    content: '👥';
+}
+
+.icon-box::before {
+    content: '📦';
+}
+
+.icon-report::before {
+    content: '📊';
+}
+
+.icon-cash::before {
+    content: '💰';
+}
